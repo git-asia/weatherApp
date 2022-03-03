@@ -36,7 +36,7 @@ const weatherInfo = (info) => {
   tempFeel.textContent = convertToCelcius(info.main.feels_like);
   tempMin.textContent = convertToCelcius(info.main.temp_min);
   tempMax.textContent = convertToCelcius(info.main.temp_max);
-  weatherIcon.src = `http://openweathermap.org/img/wn/${info.weather[0].icon}.png`
+  weatherIcon.src = `https://openweathermap.org/img/wn/${info.weather[0].icon}.png`
   errorMessage.textContent = "";
 };
 
@@ -44,7 +44,7 @@ const weatherInfo = (info) => {
 
 const getWeatherByLocation = (coords) => {
   console.log(coords);
-  const URL = `http://api.openweathermap.org/data/2.5/weather?lat=${coords.latitude}&lon=${coords.longitude}&appid=${API_KEY}`;
+  const URL = `https://api.openweathermap.org/data/2.5/weather?lat=${coords.latitude}&lon=${coords.longitude}&appid=${API_KEY}`;
   fetch(URL)
     .then((res) => res.json())
     .then((res) => weatherInfo(res))
@@ -65,7 +65,7 @@ getMyLocation();
 // SEARCH LOCATION
 
 const getWeatherBySearch = (city) => {
-  const URL = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`;
+  const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`;
   fetch(URL)
     .then((res) => res.json())
     .then((res) => weatherInfo(res))
