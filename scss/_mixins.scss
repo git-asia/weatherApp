@@ -1,0 +1,28 @@
+@mixin flex ($direction: row, $justify: flex-start, $align: flex-start, $flexgap: 0) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $justify;
+	align-items: $align;
+	gap: $flexgap;
+}
+
+@mixin glass-effect($glassblur: 5px) {
+	backdrop-filter: blur($glassblur) saturate(180%);
+	background-color: rgba(22, 33, 53, 0.75);
+	border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+@mixin text ($txt-size: 10px, $txt-color: white, $txt-weight: 400) {
+	font-size: $txt-size;
+	color: $txt-color;
+	font-weight: $txt-weight;
+}
+
+@mixin blue-gradient {
+  background: rgb(21, 173, 228);
+  background: radial-gradient(
+    circle,
+    rgb(35, 82, 185) 32%,
+    rgb(4, 143, 106) 100%
+  );
+}

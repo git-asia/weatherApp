@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  min-width: 100vh;
+  min-height: 100vh;
+  font-family: 'League Spartan', sans-serif;
+  background-image: url(../media/aurora-gf117c79ce_1920.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  margin: 26px auto;
+  font-size: 36px;
+  color: #ca1eda;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #0f95e9;
+}
+
+h3 {
+  margin-bottom: 5px;
+  font-size: 26px;
+  color: #0fcfe9;
+}
+
+h4 {
+  font-size: 20px;
+  color: #26d190;
+}
+
+span {
+  color: #e0dcdc;
+}
+
+header {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 100vw;
+}
+
+header .error-mess {
+  margin-top: 10px;
+  color: #0f1b3f;
+  font-size: 16px;
+}
+
+.header-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 500px;
+  min-height: 300px;
+  -webkit-backdrop-filter: blur(4px) saturate(180%);
+          backdrop-filter: blur(4px) saturate(180%);
+  background-color: rgba(22, 33, 53, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  border-radius: 15px;
+  text-align-last: left;
+}
+
+.bottom_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.temperature {
+  margin-top: 20px;
+}
+
+.input-group {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+input {
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+  padding: 5px 75px 5px 12px;
+  border-radius: 5px;
+  border: none;
+}
+
+#search-btn {
+  position: absolute;
+  right: 0px;
+  width: 48px;
+  height: 40px;
+  font-size: 24px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background-color: #e4e1e1;
+}
+
+#show-location {
+  width: 48px;
+  height: 40px;
+  margin-left: 10px;
+  padding: 5px;
+  font-size: 24px;
+  color: #2d2d2d;
+  border-radius: 5px;
+  border: none;
+  background-color: #e4e1e1;
+}
+
+#weather-icon {
+  margin-top: -45px;
+}
+/*# sourceMappingURL=main.css.map */

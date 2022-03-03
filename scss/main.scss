@@ -1,0 +1,111 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+@import '_resets.scss';
+
+body {
+	@include flex(column, flex-start, center, 30px);
+	min-width: 100vh;
+	min-height: 100vh;
+	font-family: 'League Spartan', sans-serif;
+	background-image: url(../media/aurora-gf117c79ce_1920.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+h1 {
+	margin: $size-lg auto;
+	font-size: $size-xl;
+	color: $h1;
+}
+h2 {
+	margin-bottom: $size-md;
+	font-size: 30px;
+	color: rgb(15, 149, 233);
+}
+h3 {
+	margin-bottom: 5px;
+	font-size: $size-lg;
+	color: $primary-col;
+}
+
+h4 {
+	font-size: $size-md;
+	color: $secondary-col;
+}
+
+span {
+	color: $white;
+}
+
+header {
+	margin-top: 40px;
+	@include flex(column, center, center, null);
+	min-width: 100vw;
+
+	.error-mess {
+		margin-top: 10px;
+		color: $dark;
+		font-size: $size-sm;
+	}
+}
+
+.header-wrapper {
+	@include flex(row, center, center, null);
+}
+
+.card {
+	@include flex(column, center, center, null);
+	min-width: 500px;
+	min-height: 300px;
+	@include glass-effect(4px);
+	border-radius: 15px;
+	text-align-last: left;
+}
+
+.bottom_wrapper {
+	@include flex(row, space-between, center, null);
+}
+.temperature {
+	margin-top: $size-md;
+}
+
+.input-group {
+	position: relative;
+	@include flex(row, center, center, null);
+}
+
+input {
+	width: 100%;
+	height: 40px;
+	font-size: 18px;
+	padding: 5px 75px 5px 12px;
+	border-radius: 5px;
+	border: none;
+}
+
+#search-btn {
+	position: absolute;
+	right: 0px;
+	width: 48px;
+	height: 40px;
+	font-size: 24px;
+	border: none;
+	border-radius: 0 5px 5px 0;
+	background-color: rgb(228, 225, 225);
+}
+
+#show-location {
+	width: 48px;
+	height: 40px;
+	margin-left: 10px;
+	padding: 5px;
+	font-size: 24px;
+	color: rgb(45, 45, 45);
+	border-radius: 5px;
+	border: none;
+	background-color: rgb(228, 225, 225);
+}
+
+#weather-icon {
+	margin-top: -45px;
+}
